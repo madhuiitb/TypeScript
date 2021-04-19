@@ -6,6 +6,19 @@ function add(num1: number, num2: number) {
     return num1 + num2;
 }
 
-button.addEventListener("click",function() {
-    console.log(add(+input1.value, +input2.value));
+function sub(num1: number, num2: number) {
+    return num1 - num2;
+}
+
+function mul(num1: number, num2: number) {
+    return num1 * num2;
+}
+
+function div(num1: number, num2: number) {
+    return num1 / num2;
+}
+
+
+button?.addEventListener("click",(e: Event) => {
+    console.log(e(+input1.value, +input2.value));
 });
